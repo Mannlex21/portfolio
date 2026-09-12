@@ -12,16 +12,16 @@ export interface ProjectMedia {
 export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 	"recetario-ai": {
 		images: {
-			main: "/projects/finance-main.png",
-			mobile: "/projects/finance-mobile.png",
+			main: "/images/projects/recetario-ai/recetario-main.png",
+			mobile: "/images/projects/recetario-ai/recetario-mobile.png",
 		},
 		githubUrl: "https://github.com/Mannlex21/recetario-de-papa",
 		liveUrl: "https://recetario-de-papa.vercel.app/",
 	},
 	"finance-ai": {
 		images: {
-			main: "/projects/sat-main.png",
-			mobile: "/projects/sat-mobile.png",
+			main: "/images/projects/finance/finance-main.png",
+			mobile: "/images/projects/finance/finance-mobile.png",
 		},
 		githubUrl: "https://github.com/Mannlex21/agente-finanzas",
 		liveUrl: "https://agente-finanzas-vert.vercel.app/",

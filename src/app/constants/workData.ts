@@ -1,64 +1,85 @@
 // constants/workData.ts
-export interface WorkExperience {
+export interface WorkExperienceItem {
 	id: string;
-	period: string;
-	duration: string;
 	company: string;
-	role: string;
+	period: string;
+	location: string;
 	stack: string;
-	description: string[];
 	technologies: string[];
-	location?: string;
 }
 
-export const WORK_EXPERIENCES: WorkExperience[] = [
+export const WORK_EXPERIENCES: WorkExperienceItem[] = [
 	{
-		id: "ithub",
-		period: "2022 - Present",
-		duration: "1 year 5 months",
-		company: "ITHUB",
-		role: "Frontend developer",
-		stack: "React & Vue",
-		location: "Remote",
-		description: [
-			"Desarrollo de interfaces de usuario escalables y optimizadas para rendimiento.",
-			"Liderazgo en la migración de componentes legacy a Next.js y Tailwind CSS.",
-			"Colaboración directa con equipos de producto para definir requisitos de UX/UI.",
-		],
+		id: "sye-software",
+		company: "SYE Software",
+		period: "01/2025 — Presente",
+		location: "Ciudad de México",
+		stack: "React, Angular 17 & Oracle SQL",
 		technologies: [
 			"React",
-			"Vue.js",
-			"Next.js",
+			"Angular 17",
 			"TypeScript",
+			"React Query",
+			"RxJS",
+			"PrimeNG",
+			"Angular Material",
 			"Tailwind CSS",
+			"Vite",
+			"Oracle DB",
+			"MSW",
+			"SonarQube",
+			"Git / TFS",
 		],
 	},
 	{
-		id: "vk-lab",
-		period: "2021 - 2022",
-		duration: "8 months",
-		company: "VK Development Lab",
-		role: "Frontend developer",
-		stack: "React",
-		location: "Remote",
-		description: [
-			"Mantenimiento e implementación de nuevas características en aplicaciones web corporativas.",
-			"Integración de APIs RESTful y optimización del consumo de datos en el cliente.",
+		id: "qualtop-group",
+		company: "Qualtop Group",
+		period: "04/2019 — 01/2025",
+		location: "Ciudad de México",
+		stack: "React, Angular, C# .NET & SQL",
+		technologies: [
+			"React",
+			"Angular",
+			"TypeScript",
+			"C# .NET / ASP.NET",
+			"Micro Frontends",
+			"MUI",
+			"Razor",
+			"Kendo UI",
+			"SQL Server",
+			"Oracle SQL",
+			"SonarCloud",
+			"Git / TFS",
 		],
-		technologies: ["React", "Redux Toolkit", "JavaScript", "CSS Modules"],
 	},
 	{
-		id: "sn-inc",
-		period: "2020 - 2021",
-		duration: "9 months",
-		company: "SN Inc.",
-		role: "Fullstack developer",
-		stack: "JavaScript & Python",
-		location: "Remote",
-		description: [
-			"Desarrollo end-to-end de microservicios y módulos frontend.",
-			"Implementación de pruebas unitarias e integración continua.",
+		id: "mavi",
+		company: "MAVI S.A. DE C.V.",
+		period: "03/2018 — 04/2019",
+		location: "Guadalajara, Jal.",
+		stack: "Vue.js, C# .NET & SQL Server",
+		technologies: [
+			"Vue.js",
+			"JavaScript (ES6+)",
+			"HTML5/CSS3",
+			"C# .NET",
+			"SQL Server",
+			"Git",
 		],
-		technologies: ["JavaScript", "Python", "Node.js", "PostgreSQL"],
+	},
+	{
+		id: "ingenio-puga",
+		company: "Ingenio de Puga S.A. DE C.V.",
+		period: "08/2017 — 03/2018",
+		location: "Tepic, Nay.",
+		stack: "Razor, WinForms & C# .NET",
+		technologies: [
+			"C# .NET",
+			"Razor",
+			"WinForms UI",
+			"JavaScript",
+			"HTML5/CSS3",
+			"SQL Server",
+		],
 	},
 ];

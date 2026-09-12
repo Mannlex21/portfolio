@@ -16,11 +16,11 @@ export default function HeroSection() {
 				{/* 1. "Full-stack" */}
 				<div className="order-1 lg:col-span-7">
 					<h1 className="font-sans text-6xl sm:text-8xl md:text-9xl font-bold text-white tracking-tight leading-none text-start">
-						Full-stack
+						{t.about.heroTitle1}
 					</h1>
 				</div>
 
-				{/* 2. Botón "Ver proyectos" (Móvil: Order 4 al final | Desktop: Order 2 al lado de Full-stack) */}
+				{/* 2. Botón "Ver proyectos" */}
 				<div className="order-4 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end">
 					<Link
 						href="#projects"
@@ -39,17 +39,17 @@ export default function HeroSection() {
 					</Link>
 				</div>
 
-				{/* 3. Descripción / Bio (Móvil: Order 3 | Desktop: Order 3 abajo a la izquierda) */}
+				{/* 3. Descripción / Bio resumida del CV */}
 				<div className="order-3 lg:col-span-5 pt-2">
-					<p className="font-sans text-[#A6A6A6] text-sm sm:text-base leading-relaxed w-full lg:max-w-md ">
+					<p className="font-sans text-[#A6A6A6] text-sm sm:text-base leading-relaxed w-full lg:max-w-md">
 						{t.about.bio}
 					</p>
 				</div>
 
-				{/* 4. "Developer" (Móvil: Order 2 | Desktop: Order 4 abajo a la derecha) */}
+				{/* 4. "Developer" */}
 				<div className="order-2 lg:order-4 lg:col-span-7 flex justify-end">
 					<h1 className="font-sans text-6xl sm:text-8xl md:text-9xl font-bold text-white tracking-tight leading-none">
-						Developer
+						{t.about.heroTitle2}
 					</h1>
 				</div>
 			</div>

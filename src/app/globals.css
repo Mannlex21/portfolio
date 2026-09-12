@@ -16,3 +16,29 @@ html {
 	color: #f5f5f5;
 	scroll-behavior: smooth;
 }
+/* globals.css */
+
+/* Personalización del scrollbar global de la página */
+::-webkit-scrollbar {
+	width: 8px; /* Ancho de la barra vertical */
+	height: 8px; /* Altura de la barra horizontal si aplica */
+}
+
+::-webkit-scrollbar-track {
+	background: #0f0f0f; /* Fondo oscuro integrado con el tema */
+}
+
+::-webkit-scrollbar-thumb {
+	background: #2a2a2a; /* Color del indicador */
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #444444; /* Hover más claro al interactuar */
+}
+
+/* Soporte para Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: #2a2a2a #0f0f0f;
+}

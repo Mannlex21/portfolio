@@ -6,23 +6,21 @@
 		"work": "/Experiencia",
 		"contacts": "/Contacto"
 	},
-	"about": {
-		"role": "Full-stack Developer Senior",
-		"projectsBtn": "Ver Proyectos",
-		"bio": "Especialista en Frontend Escalable y Arquitectura .NET. 8+ años creando sistemas de alto rendimiento, micro frontends y soluciones con IA.",
-		"tag": "... /Sobre mí ...",
-		"frontend": "Frontend & UI Architecture",
-		"backend": "Backend & Databases",
-		"devops": "Calidad, Tooling & DevOps",
-		"introTitle": "Hola, soy Manuel Murillo.",
-		"introBio": "Desarrollador Full Stack enfocado en arquitectura limpia, rendimiento y código mantenible evaluado bajo altos estándares de calidad."
-	},
+
 	"metrics": [
 		{ "value": "8+", "label": "Años de experiencia" },
 		{ "value": "SAT / BCIE", "label": "Proyectos de misión crítica" },
 		{ "value": "100%", "label": "Enfoque en código limpio" }
 	],
-
+	"about": {
+		"tag": "... /Sobre mí ...",
+		"intro": "¡Hola! Soy Manuel, Desarrollador Full Stack Senior con más de 8 años de experiencia en la arquitectura y desarrollo de sistemas empresariales de misión crítica.",
+		"role": "Full-stack Developer Senior",
+		"bio": "Especialista en Frontend Escalable y Arquitectura .NET. 8+ años creando sistemas de alto rendimiento, micro frontends y soluciones con IA.",
+		"heroTitle1": "Full-stack",
+		"heroTitle2": "Developer",
+		"projectsBtn": "Ver proyectos"
+	},
 	"projects": {
 		"tag": "... /Proyectos ...",
 		"title": "Proyectos Destacados",
@@ -89,40 +87,94 @@
 		"tag": "... /Experiencia ...",
 		"title": "Experiencia Laboral",
 		"subtitle": "Trayectoria construyendo software de misión crítica, guiando arquitecturas frontend y optimizando backend empresarial.",
-		"experiences": [
-			{
-				"id": "sye-sat",
-				"company": "SYE Software (Cliente: SAT)",
+		"totalExperienceLabel": "Experiencia Total",
+		"totalExperienceValue": "8+ años",
+		"modalLabels": {
+			"projects": "Proyectos Destacados",
+			"technologies": "Tecnologías y Herramientas Utilizadas"
+		},
+		"items": {
+			"sye-software": {
 				"role": "Desarrollador Frontend Advisor",
-				"period": "01/2025 — Presente",
-				"description": "Liderazgo técnico en módulos fiscales críticos (Devoluciones, Compensaciones y Catálogos Masivos). Implementación de React Query, Angular 17, RxJS y análisis estático con SonarQube.",
-				"skills": [
-					"React",
-					"Angular 17",
-					"TypeScript",
-					"React Query",
-					"RxJS",
-					"Oracle SQL",
-					"SonarQube"
+				"duration": "Presente",
+				"projects": [
+					{
+						"name": "Proyecto: Devoluciones y Compensaciones (SAT)",
+						"description": [
+							"Desarrollo de Flujos Fiscales Críticos: Diseñé e implementé la interfaz de usuario con React y TypeScript para el módulo de Solicitud de Devolución, procesando flujos de trámites complejos con alta eficiencia.",
+							"Optimización de Rendimiento y Latencia: Integré React Query para la gestión eficiente del estado del servidor y caché, reduciendo de forma significativa la latencia de respuesta y la carga sobre las APIs del backend.",
+							"Arquitectura Modular y UI Kit: Construí una librería de componentes reutilizables con Tailwind CSS, asegurando consistencia visual, responsividad y mantenibilidad bajo una arquitectura limpia y desacoplada.",
+							"Seguridad y Calidad: Implementé mecanismos de autenticación centralizada mediante tokens JWT y mantuve el código optimizado utilizando herramientas de tooling moderno como Vite y control de versiones en Git / TFS."
+						]
+					},
+					{
+						"name": "Proyecto: Administración Catálogos",
+						"description": [
+							"Arquitectura Angular de Alto Rendimiento: Lideré el desarrollo del módulo de catálogos masivos utilizando Angular 17, TypeScript y RxJS para la gestión reactiva y asíncrona del estado de la aplicación.",
+							"Componentes Complejos y UX: Creé interfaces CRUD avanzadas integrando PrimeNG y Angular Material, junto con utilidades dedicadas a la importación y exportación masiva de registros.",
+							"Base de Datos y Scripting Oracle SQL: Diseñé y ejecuté scripts SQL avanzados en Oracle DB para mantenimiento preventivo, corrección de datos productivos y optimización de consultas masivas.",
+							"Pruebas y Mocking Aislado: Implementé Mock Service Worker (MSW) y Axios para simular escenarios de API y acelerar el ciclo de desarrollo frontend de forma independiente del backend.",
+							"Análisis Estático de Código: Garanticé la mitigación de vulnerabilidades y deudas técnicas aplicando estándares rigurosos con SonarQube / SonarCloud."
+						]
+					}
 				]
 			},
-			{
-				"id": "qualtop",
-				"company": "Qualtop Group (Clientes: BCIE, Edenred, C&A)",
+			"qualtop-group": {
 				"role": "Desarrollador Full Stack Senior",
-				"period": "04/2019 — 01/2025",
-				"description": "Diseño de arquitectura de Micro Frontends con React y MUI. Desarrollo de servicios RESTful con ASP.NET (C#) y optimización de procedimientos almacenados en SQL Server.",
-				"skills": [
-					"React",
-					"Angular",
-					"C# .NET",
-					"SQL Server",
-					"Micro Frontends",
-					"MUI"
+				"duration": "5 años 9 meses",
+				"projects": [
+					{
+						"name": "Proyectos: BCIE y Qualtop CVs",
+						"description": [
+							"Arquitectura de Micro Frontends: Diseñé e integré arquitecturas de Micro Frontends modulares y desacoplados utilizando React y MUI, acelerando el tiempo de despliegue en un 20%.",
+							"Desarrollo Web Dinámico: Construí aplicaciones altamente interactivas con Angular y React, optimizando componentes reutilizables y mejorando la responsividad UX/UI.",
+							"Servicios Backend & SQL: Diseñé y mantuve servicios RESTful con ASP.NET (C#), además de optimizar procedimientos almacenados y vistas complejas en SQL Server y Oracle SQL.",
+							"Gestión de Base de Datos: Desarrollo y optimización de procedimientos almacenados y consultas complejas en SQL Server y Oracle SQL.",
+							"Control de Versiones & CI/CD: Gestión colaborativa de código mediante Git y Team Foundation Server."
+						]
+					},
+					{
+						"name": "Proyectos: Edenred y C&A",
+						"description": [
+							"Desarrollo Web & UI: Construí módulos web empresariales utilizando Angular, Razor, JavaScript, HTML5/CSS3 y suite de componentes Kendo UI.",
+							"Arquitectura Backend C#: Diseñé y desplegué APIs RESTful en C# .NET / ASP.NET, garantizando comunicaciones seguras e integraciones estables con la capa cliente.",
+							"Bases de Datos & Calidad: Creé y optimicé procedimientos almacenados complejos en Microsoft SQL Server y ejecuté análisis de calidad y seguridad mediante SonarCloud."
+						]
+					}
+				]
+			},
+			"mavi": {
+				"role": "Desarrollador Fullstack",
+				"duration": "1 año 1 mes",
+				"projects": [
+					{
+						"name": "Proyectos: Desarrollos Internos",
+						"description": [
+							"Desarrollo Frontend Interactivo: Diseñé e implementé interfaces de usuario dinámicas y responsivas utilizando Vue.js, JavaScript (ES6+), HTML5 y CSS3 para optimizar la experiencia de usuario (UX) en aplicaciones internas críticas.",
+							"Arquitectura Backend & APIs: Desarrollé y mantuve servicios backend y APIs empresariales con C# .NET, asegurando una integración fluida y eficiente con la capa cliente.",
+							"Optimización de Bases de Datos: Diseñé, optimicé y realicé mantenimiento a procedimientos almacenados complejos en SQL Server, reduciendo tiempos de consulta e incrementando el rendimiento de las operaciones masivas.",
+							"Gestión de Código & Colaboración: Administré repositorios y flujos de trabajo colaborativos utilizando Git, aplicando buenas prácticas de control de versiones y revisión de código."
+						]
+					}
+				]
+			},
+			"ingenio-puga": {
+				"role": "Desarrollador Fullstack",
+				"duration": "8 meses",
+				"projects": [
+					{
+						"name": "Proyectos: Desarrollos Internos",
+						"description": [
+							"Desarrollo Multiplataforma: Creación de aplicaciones web y de escritorio utilizando Razor y WinForms UI (.NET) con JavaScript, HTML y CSS.",
+							"Desarrollo Backend: Construcción de lógica de negocio y servicios backend en C# .NET.",
+							"Base de Datos: Desarrollo y optimización de consultas y procedimientos almacenados en SQL Server."
+						]
+					}
 				]
 			}
-		]
+		}
 	},
+
 	"contact": {
 		"tag": "... /Contacto ...",
 		"title": "¿Trabajamos juntos?",

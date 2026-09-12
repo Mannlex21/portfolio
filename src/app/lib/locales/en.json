@@ -6,22 +6,20 @@
 		"work": "/Work",
 		"contacts": "/Contacts"
 	},
-	"about": {
-		"role": "Senior Full-stack Developer",
-		"projectsBtn": "View Projects",
-		"bio": "Scalable Frontend & .NET Architecture Specialist. 8+ years building high-performance systems, micro frontends, and AI solutions.",
-		"tag": "... /About me ...",
-		"frontend": "Frontend & UI Architecture",
-		"backend": "Backend & Databases",
-		"devops": "Quality, Tooling & DevOps",
-		"introTitle": "Hi, I'm Manuel Murillo.",
-		"introBio": "Full Stack Developer focused on clean architecture, performance, and maintainable code evaluated under high quality standards."
-	},
 	"metrics": [
 		{ "value": "8+", "label": "Years of experience" },
 		{ "value": "SAT / BCIE", "label": "Mission-critical projects" },
 		{ "value": "100%", "label": "Clean code focus" }
 	],
+	"about": {
+		"tag": "... /About me ...",
+		"intro": "Hello! I'm Manuel, Senior Full-Stack Developer with over 8 years of experience building scalable, mission-critical enterprise systems.",
+		"role": "Senior Full-stack Developer",
+		"bio": "Scalable Frontend & .NET Architecture Specialist. 8+ years building high-performance systems, micro frontends, and AI solutions.",
+		"heroTitle1": "Full-stack",
+		"heroTitle2": "Developer",
+		"projectsBtn": "View projects"
+	},
 	"projects": {
 		"tag": "... /Projects ...",
 		"title": "Featured Projects",
@@ -88,40 +86,94 @@
 		"tag": "... /Career Path ...",
 		"title": "Work Experience",
 		"subtitle": "Track record of building mission-critical software, guiding frontend architectures, and optimizing enterprise backends.",
-		"experiences": [
-			{
-				"id": "sye-sat",
-				"company": "SYE Software (Client: SAT)",
+		"totalExperienceLabel": "Total Experience",
+		"totalExperienceValue": "8+ years",
+		"modalLabels": {
+			"projects": "Featured Projects",
+			"technologies": "Technologies & Tools Used"
+		},
+		"items": {
+			"sye-software": {
 				"role": "Frontend Advisor Developer",
-				"period": "01/2025 — Present",
-				"description": "Technical leadership in critical tax modules (Refunds, Compensations, and Mass Catalogs). Implementation of React Query, Angular 17, RxJS, and static analysis with SonarQube.",
-				"skills": [
-					"React",
-					"Angular 17",
-					"TypeScript",
-					"React Query",
-					"RxJS",
-					"Oracle SQL",
-					"SonarQube"
+				"duration": "Present",
+				"projects": [
+					{
+						"name": "Project: Tax Refunds & Compensations (SAT)",
+						"description": [
+							"Critical Tax Workflow Development: Designed and implemented user interface using React and TypeScript for tax refund request modules, efficiently processing complex workflows.",
+							"Performance & Latency Optimization: Integrated React Query for efficient server state management and caching, significantly reducing response latency and backend API load.",
+							"Modular Architecture & UI Kit: Built a reusable component library with Tailwind CSS ensuring visual consistency and maintainability under a decoupled architecture.",
+							"Security & Quality: Implemented centralized JWT authentication and maintained optimized code using modern tooling like Vite and Git / TFS version control."
+						]
+					},
+					{
+						"name": "Project: Catalog Management",
+						"description": [
+							"High-Performance Angular Architecture: Led the development of mass catalog modules using Angular 17, TypeScript, and RxJS for reactive and asynchronous application state management.",
+							"Complex Components & UX: Built advanced CRUD interfaces integrating PrimeNG and Angular Material, alongside dedicated mass data import/export utilities.",
+							"Oracle SQL Database Scripting: Designed and executed advanced SQL scripts in Oracle DB for preventive maintenance, production data correction, and query optimization.",
+							"Isolated Testing & Mocking: Implemented Mock Service Worker (MSW) and Axios to simulate API scenarios and accelerate frontend development independently.",
+							"Static Code Analysis: Enforced strict code quality and security standards mitigating technical debt using SonarQube / SonarCloud."
+						]
+					}
 				]
 			},
-			{
-				"id": "qualtop",
-				"company": "Qualtop Group (Clients: BCIE, Edenred, C&A)",
+			"qualtop-group": {
 				"role": "Senior Full Stack Developer",
-				"period": "04/2019 — 01/2025",
-				"description": "Micro Frontend architecture design with React and MUI. Development of RESTful services with ASP.NET (C#) and stored procedure optimization in SQL Server.",
-				"skills": [
-					"React",
-					"Angular",
-					"C# .NET",
-					"SQL Server",
-					"Micro Frontends",
-					"MUI"
+				"duration": "5 years 9 months",
+				"projects": [
+					{
+						"name": "Projects: BCIE & Qualtop CVs",
+						"description": [
+							"Micro Frontend Architecture: Designed and integrated modular Micro Frontend architectures using React and MUI, accelerating deployment times by 20%.",
+							"Dynamic Web Development: Built interactive web applications with Angular and React, optimizing reusable components and enhancing UX/UI responsiveness.",
+							"Backend Services & SQL: Designed and maintained RESTful services with ASP.NET (C#), and optimized complex stored procedures and views in SQL Server and Oracle SQL.",
+							"Database Management: Developed and optimized complex queries and stored procedures in SQL Server and Oracle SQL.",
+							"Version Control & CI/CD: Managed code repositories collaboratively using Git and Team Foundation Server."
+						]
+					},
+					{
+						"name": "Projects: Edenred & C&A",
+						"description": [
+							"Web Development & UI: Built enterprise web modules using Angular, Razor, JavaScript, HTML5/CSS3, and the Kendo UI component suite.",
+							"C# Backend Architecture: Designed and deployed RESTful APIs in C# .NET / ASP.NET, ensuring secure client integrations.",
+							"Databases & Quality: Created and optimized complex stored procedures in Microsoft SQL Server and performed code quality checks via SonarCloud."
+						]
+					}
+				]
+			},
+			"mavi": {
+				"role": "Fullstack Developer",
+				"duration": "1 year 1 month",
+				"projects": [
+					{
+						"name": "Projects: Internal Systems",
+						"description": [
+							"Interactive Frontend Development: Designed and implemented dynamic user interfaces using Vue.js, JavaScript (ES6+), HTML5, and CSS3 for internal critical apps.",
+							"Backend Architecture & APIs: Developed and maintained enterprise backend services and REST APIs with C# .NET.",
+							"Database Optimization: Designed and optimized complex stored procedures in SQL Server, reducing query execution time during mass operations.",
+							"Code Management: Managed repositories and collaborative workflows using Git following code review best practices."
+						]
+					}
+				]
+			},
+			"ingenio-puga": {
+				"role": "Fullstack Developer",
+				"duration": "8 months",
+				"projects": [
+					{
+						"name": "Projects: Internal Systems",
+						"description": [
+							"Cross-Platform Development: Developed web and desktop applications using Razor and WinForms UI (.NET) with JavaScript, HTML, and CSS.",
+							"Backend Development: Built core business logic and backend services in C# .NET.",
+							"Database Management: Developed and optimized SQL queries and stored procedures in SQL Server."
+						]
+					}
 				]
 			}
-		]
+		}
 	},
+
 	"contact": {
 		"tag": "... /Contacts ...",
 		"title": "Let's work together?",

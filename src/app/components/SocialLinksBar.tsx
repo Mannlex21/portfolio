@@ -2,8 +2,9 @@
 "use client";
 
 import React from "react";
-import { Send } from "lucide-react"; // Telegram sigue disponible en Lucide
-import { PERSONAL_SOCIAL_LINKS } from "@/app/constants/socialLinks";
+import { Send, Download } from "lucide-react";
+import { useLanguage } from "@/app/context/LanguageContext";
+import { getSocialLinks } from "@/app/constants/socialLinks";
 
 const BRAND_ICONS: Record<string, React.ReactNode> = {
 	github: (
@@ -16,22 +17,10 @@ const BRAND_ICONS: Record<string, React.ReactNode> = {
 			<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
 		</svg>
 	),
+	cv: <Download className="w-3.5 h-3.5" />,
 	facebook: (
 		<svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
 			<path d="M9 8H6v4h3v12h5V12h3.642L18 8h-4V6.333C14 5.374 14.5 5 15.5 5H18V0h-3.808C10.592 0 9 1.592 9 4.815V8z" />
-		</svg>
-	),
-	instagram: (
-		<svg
-			className="w-3.5 h-3.5 stroke-current fill-none"
-			viewBox="0 0 24 24"
-			strokeWidth="2"
-			strokeLinecap="round"
-			strokeLinejoin="round"
-		>
-			<rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-			<path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-			<line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
 		</svg>
 	),
 	x: (
@@ -43,15 +32,19 @@ const BRAND_ICONS: Record<string, React.ReactNode> = {
 };
 
 export function SocialLinksBar() {
+	const { language } = useLanguage();
+	const links = getSocialLinks(language as "es" | "en");
+
 	return (
 		<div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-			{PERSONAL_SOCIAL_LINKS.map((link) => {
+			{links.map((link) => {
 				const Icon = BRAND_ICONS[link.platform];
 				return (
 					<a
 						key={link.id}
 						href={link.url}
-						target="_blank"
+						target={link.download ? "_self" : "_blank"}
+						download={link.download}
 						rel="noreferrer"
 						className="inline-flex items-center gap-2 font-mono text-xs text-[#A6A6A6] hover:text-white bg-[#1E1E1E]/40 hover:bg-[#1E1E1E] border border-[#3D3D3D] hover:border-[#F5F5F5]/40 px-4 py-2 rounded-full transition-all duration-300"
 					>

@@ -45,7 +45,7 @@ export default function Navbar() {
 
 				<nav className="hidden md:flex space-x-8 font-mono text-xs text-[#A6A6A6]">
 					<Link
-						href="/"
+						href="#"
 						className="hover:text-white transition-colors"
 					>
 						{t.nav.main}
