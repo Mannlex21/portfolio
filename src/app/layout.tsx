@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fira_Code, Open_Sans } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "./context/LanguageContext";
+import Navbar from "./components/Navbar";
 
 const firaCode = Fira_Code({
 	subsets: ["latin"],
@@ -38,7 +39,10 @@ export default function RootLayout({
 	return (
 		<html lang="es" className={`${firaCode.variable} ${openSans.variable}`}>
 			<body className="bg-darkBg text-lightBg font-sans antialiased selection:bg-lightBg selection:text-darkBg">
-				<LanguageProvider>{children}</LanguageProvider>
+				<LanguageProvider>
+					<Navbar />
+					{children}
+				</LanguageProvider>
 			</body>
 		</html>
 	);

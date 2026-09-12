@@ -2,12 +2,12 @@
 "use client";
 
 import React, { createContext, useContext, useState } from "react";
-import { Language, fontTranslations } from "@/app/lib/i18n";
+import { Language, fontTranslations, TranslationSchema } from "@/app/lib/i18n";
 
 interface LanguageContextType {
 	language: Language;
 	toggleLanguage: () => void;
-	t: (typeof fontTranslations)["es"];
+	t: TranslationSchema;
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(

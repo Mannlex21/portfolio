@@ -1,0 +1,135 @@
+{
+	"nav": {
+		"main": "/Main",
+		"about": "/About",
+		"projects": "/Projects",
+		"work": "/Work",
+		"contacts": "/Contacts"
+	},
+	"about": {
+		"role": "Senior Full-stack Developer",
+		"projectsBtn": "View Projects",
+		"bio": "Scalable Frontend & .NET Architecture Specialist. 8+ years building high-performance systems, micro frontends, and AI solutions.",
+		"tag": "... /About me ...",
+		"frontend": "Frontend & UI Architecture",
+		"backend": "Backend & Databases",
+		"devops": "Quality, Tooling & DevOps",
+		"introTitle": "Hi, I'm Manuel Murillo.",
+		"introBio": "Full Stack Developer focused on clean architecture, performance, and maintainable code evaluated under high quality standards."
+	},
+	"metrics": [
+		{ "value": "8+", "label": "Years of experience" },
+		{ "value": "SAT / BCIE", "label": "Mission-critical projects" },
+		{ "value": "100%", "label": "Clean code focus" }
+	],
+	"projects": {
+		"tag": "... /Projects ...",
+		"title": "Featured Projects",
+		"subtitle": "Selection of enterprise systems and innovative products driven by AI.",
+		"seeMore": "See details",
+		"modalLabels": {
+			"summary": "Project Summary",
+			"responsibilities": "Key Responsibilities & Achievements",
+			"challenges": "Technical Challenge & Solution",
+			"technologies": "Technologies & Tools Used",
+			"viewCode": "View Code on GitHub",
+			"tryDemo": "Try Live Demo"
+		},
+		"items": [
+			{
+				"id": "recetario-ai",
+				"title": "Interactive Recipe Book with AI",
+				"category": "Full-Stack / AI Web App",
+				"description": "Smart web application with streaming responses for interactive recipe creation and management.",
+				"longDescription": "Smart Web Application built with Next.js (App Router) and TypeScript designed for real-time interactive recipe management, personalization, and creation using artificial intelligence.",
+				"responsibilities": [
+					"Implementation of Vercel AI SDK with streaming responses for real-time interactive culinary assistance.",
+					"Structured recipe generation strictly validated using Zod schemas.",
+					"Utilization of Server Actions for data persistence and mutations without traditional REST APIs.",
+					"Responsive, dynamic, and accessible UI layout built modernly with Tailwind CSS."
+				],
+				"challenges": "Ensuring AI-generated streaming responses maintained a strict, immutable data structure without runtime parsing errors through Zod schema enforcement.",
+				"tags": [
+					"Next.js",
+					"TypeScript",
+					"Vercel AI SDK",
+					"Zod",
+					"Tailwind CSS"
+				]
+			},
+			{
+				"id": "finance-ai",
+				"title": "Smart Financial Management with AI Agent",
+				"category": "Full-Stack / AI Financial Agent",
+				"description": "Personal finance control, budget management, and multi-account balance tracking with a real-time AI agent.",
+				"longDescription": "Smart Web Application built with Next.js (App Router), React, and TypeScript for personal finance control, budget management, and real-time bank account/credit card tracking.",
+				"responsibilities": [
+					"Built an interactive conversational agent using Vercel AI SDK and Gemini API to parse natural language prompts for recording expenses, income, budgets, and account balances.",
+					"Strict parsing and validation of user financial intent via Zod schemas.",
+					"Modern backend architecture using Server Actions for atomic mutations and balance/debt updates.",
+					"Prisma v7+ modeling on PostgreSQL (Supabase), route revalidation (revalidatePath), and safe Decimal type serialization."
+				],
+				"challenges": "Handling state and mathematical accuracy when atomically updating balances and debts across multiple accounts driven by unstructured natural language input.",
+				"tags": [
+					"Next.js",
+					"TypeScript",
+					"Vercel AI SDK",
+					"Gemini API",
+					"Prisma",
+					"PostgreSQL",
+					"Zod",
+					"Tailwind CSS"
+				]
+			}
+		]
+	},
+
+	"work": {
+		"tag": "... /Career Path ...",
+		"title": "Work Experience",
+		"subtitle": "Track record of building mission-critical software, guiding frontend architectures, and optimizing enterprise backends.",
+		"experiences": [
+			{
+				"id": "sye-sat",
+				"company": "SYE Software (Client: SAT)",
+				"role": "Frontend Advisor Developer",
+				"period": "01/2025 — Present",
+				"description": "Technical leadership in critical tax modules (Refunds, Compensations, and Mass Catalogs). Implementation of React Query, Angular 17, RxJS, and static analysis with SonarQube.",
+				"skills": [
+					"React",
+					"Angular 17",
+					"TypeScript",
+					"React Query",
+					"RxJS",
+					"Oracle SQL",
+					"SonarQube"
+				]
+			},
+			{
+				"id": "qualtop",
+				"company": "Qualtop Group (Clients: BCIE, Edenred, C&A)",
+				"role": "Senior Full Stack Developer",
+				"period": "04/2019 — 01/2025",
+				"description": "Micro Frontend architecture design with React and MUI. Development of RESTful services with ASP.NET (C#) and stored procedure optimization in SQL Server.",
+				"skills": [
+					"React",
+					"Angular",
+					"C# .NET",
+					"SQL Server",
+					"Micro Frontends",
+					"MUI"
+				]
+			}
+		]
+	},
+	"contact": {
+		"tag": "... /Contacts ...",
+		"title": "Let's work together?",
+		"subtitle": "Available for projects, frontend consulting, or Senior Full-stack roles. Send me a message and let's talk.",
+		"role": "Full-stack developer",
+		"siteTitle": "Site",
+		"poweredBy": "Powered by Next.js /",
+		"styledWith": "Styled with Tailwind CSS /",
+		"writtenIn": "Written in TypeScript"
+	}
+}
