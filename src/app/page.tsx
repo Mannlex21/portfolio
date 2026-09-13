@@ -3,6 +3,7 @@ import WorkSection from "@/app/Sections/WorkSection";
 import FooterSection from "@/app/Sections/FooterSection";
 import AboutSection from "@/app/Sections/AboutSection";
 import ProjectsSection from "./Sections/ProjectSection";
+import CertificationsSection from "./Sections/CertificationsSection";
 
 export default function Home() {
 	return (
@@ -11,6 +12,7 @@ export default function Home() {
 			<AboutSection />
 			<WorkSection />
 			<ProjectsSection />
+			<CertificationsSection />
 			<FooterSection />
 		</main>
 	);

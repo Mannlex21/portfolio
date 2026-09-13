@@ -2,16 +2,11 @@
 	"nav": {
 		"main": "/Inicio",
 		"about": "/Sobre mí",
-		"projects": "/Proyectos",
 		"work": "/Experiencia",
+		"projects": "/Proyectos",
+		"education": "/Educación & Certificados",
 		"contacts": "/Contacto"
 	},
-
-	"metrics": [
-		{ "value": "8+", "label": "Años de experiencia" },
-		{ "value": "SAT / BCIE", "label": "Proyectos de misión crítica" },
-		{ "value": "100%", "label": "Enfoque en código limpio" }
-	],
 	"about": {
 		"tag": "... /Sobre mí ...",
 		"intro": "¡Hola! Soy Manuel, Desarrollador Full Stack Senior con más de 8 años de experiencia en la arquitectura y desarrollo de sistemas empresariales de misión crítica.",
@@ -21,68 +16,6 @@
 		"heroTitle2": "Developer",
 		"projectsBtn": "Ver proyectos"
 	},
-	"projects": {
-		"tag": "... /Proyectos ...",
-		"title": "Proyectos Destacados",
-		"subtitle": "Selección de sistemas web e integración de productos inteligentes con IA.",
-		"seeMore": "Ver detalle",
-		"modalLabels": {
-			"summary": "Resumen del Proyecto",
-			"responsibilities": "Responsabilidades & Logros Clave",
-			"challenges": "Desafío Técnico & Solución",
-			"technologies": "Tecnologías y Herramientas Utilizadas",
-			"viewCode": "Ver Código en GitHub",
-			"tryDemo": "Probar Demo"
-		},
-		"items": [
-			{
-				"id": "recetario-ai",
-				"title": "Recetario Interactivo con IA",
-				"category": "Full-Stack / AI Web App",
-				"description": "Aplicación web inteligente con respuestas en streaming para la gestión y creación interactiva de recetas de cocina.",
-				"longDescription": "Aplicación Web Inteligente desarrollada con Next.js (App Router) y TypeScript diseñada para la gestión, personalización y creación interactiva de recetas gastronómicas mediante inteligencia artificial en tiempo real.",
-				"responsibilities": [
-					"Implementación de Vercel AI SDK con respuestas en streaming para asistencia culinaria interactiva en tiempo real.",
-					"Generación estructurada de recetas y parámetros culinarios validados estrictamente con esquemas de Zod.",
-					"Uso de Server Actions para la persistencia y mutación directa de datos sin necesidad de APIs REST tradicionales.",
-					"Maquetado responsivo, dinámico y accesible construido de forma moderna con Tailwind CSS."
-				],
-				"challenges": "Garantizar que las respuestas generadas por la IA mantuvieran un formato de datos estricto e inmutable durante el streaming en vivo, asegurando la fluidez de la interfaz sin errores de parsing mediante esquemas Zod.",
-				"tags": [
-					"Next.js",
-					"TypeScript",
-					"Vercel AI SDK",
-					"Zod",
-					"Tailwind CSS"
-				]
-			},
-			{
-				"id": "finance-ai",
-				"title": "Gestión Financiera Inteligente con Agente IA",
-				"category": "Full-Stack / AI Financial Agent",
-				"description": "Control de finanzas personales, presupuestos y administración de cuentas con un agente conversacional en tiempo real.",
-				"longDescription": "Aplicación web e interfaz inteligente desarrollada con Next.js (App Router), React y TypeScript para el control integral de finanzas personales, gestión de presupuestos y administración de cuentas bancarias/tarjetas en tiempo real.",
-				"responsibilities": [
-					"Creación de un agente conversacional interactivo con Vercel AI SDK y Gemini API para interpretar prompts en lenguaje natural y registrar gastos, ingresos, presupuestos y cuentas.",
-					"Parseo y validación estricta de intenciones financieras del usuario mediante esquemas de Zod.",
-					"Arquitectura de backend moderno utilizando Server Actions para mutaciones atómicas y balance automático de saldo/deuda.",
-					"Modelado e integración de Prisma v7+ sobre PostgreSQL (Supabase), revalidación de rutas (revalidatePath) y serialización segura de tipos Decimal."
-				],
-				"challenges": "Manejar la precisión matemática y de estado al actualizar saldos y deudas en múltiples cuentas de forma atómica a partir de lenguaje natural no estructurado.",
-				"tags": [
-					"Next.js",
-					"TypeScript",
-					"Vercel AI SDK",
-					"Gemini API",
-					"Prisma",
-					"PostgreSQL",
-					"Zod",
-					"Tailwind CSS"
-				]
-			}
-		]
-	},
-
 	"work": {
 		"viewDetails": "Ver detalle",
 		"tag": "... /Experiencia ...",
@@ -175,7 +108,72 @@
 			}
 		}
 	},
-
+	"projects": {
+		"tag": "... /Proyectos ...",
+		"title": "Proyectos Destacados",
+		"subtitle": "Selección de sistemas web e integración de productos inteligentes con IA.",
+		"seeMore": "Ver detalle",
+		"modalLabels": {
+			"summary": "Resumen del Proyecto",
+			"responsibilities": "Responsabilidades & Logros Clave",
+			"challenges": "Desafío Técnico & Solución",
+			"technologies": "Tecnologías y Herramientas Utilizadas",
+			"viewCode": "Ver Código en GitHub",
+			"tryDemo": "Probar Demo"
+		},
+		"items": [
+			{
+				"id": "recetario-ai",
+				"title": "Recetario Interactivo con IA",
+				"category": "Full-Stack / AI Web App",
+				"description": "Aplicación web inteligente con respuestas en streaming para la gestión y creación interactiva de recetas de cocina.",
+				"longDescription": "Aplicación Web Inteligente desarrollada con Next.js (App Router) y TypeScript diseñada para la gestión, personalización y creación interactiva de recetas gastronómicas mediante inteligencia artificial en tiempo real.",
+				"responsibilities": [
+					"Implementación de Vercel AI SDK con respuestas en streaming para asistencia culinaria interactiva en tiempo real.",
+					"Generación estructurada de recetas y parámetros culinarios validados estrictamente con esquemas de Zod.",
+					"Uso de Server Actions para la persistencia y mutación directa de datos sin necesidad de APIs REST tradicionales.",
+					"Maquetado responsivo, dinámico y accesible construido de forma moderna con Tailwind CSS."
+				],
+				"challenges": "Garantizar que las respuestas generadas por la IA mantuvieran un formato de datos estricto e inmutable durante el streaming en vivo, asegurando la fluidez de la interfaz sin errores de parsing mediante esquemas Zod.",
+				"tags": [
+					"Next.js",
+					"TypeScript",
+					"Vercel AI SDK",
+					"Zod",
+					"Tailwind CSS"
+				]
+			},
+			{
+				"id": "finance-ai",
+				"title": "Gestión Financiera Inteligente con Agente IA",
+				"category": "Full-Stack / AI Financial Agent",
+				"description": "Control de finanzas personales, presupuestos y administración de cuentas con un agente conversacional en tiempo real.",
+				"longDescription": "Aplicación web e interfaz inteligente desarrollada con Next.js (App Router), React y TypeScript para el control integral de finanzas personales, gestión de presupuestos y administración de cuentas bancarias/tarjetas en tiempo real.",
+				"responsibilities": [
+					"Creación de un agente conversacional interactivo con Vercel AI SDK y Gemini API para interpretar prompts en lenguaje natural y registrar gastos, ingresos, presupuestos y cuentas.",
+					"Parseo y validación estricta de intenciones financieras del usuario mediante esquemas de Zod.",
+					"Arquitectura de backend moderno utilizando Server Actions para mutaciones atómicas y balance automático de saldo/deuda.",
+					"Modelado e integración de Prisma v7+ sobre PostgreSQL (Supabase), revalidación de rutas (revalidatePath) y serialización segura de tipos Decimal."
+				],
+				"challenges": "Manejar la precisión matemática y de estado al actualizar saldos y deudas en múltiples cuentas de forma atómica a partir de lenguaje natural no estructurado.",
+				"tags": [
+					"Next.js",
+					"TypeScript",
+					"Vercel AI SDK",
+					"Gemini API",
+					"Prisma",
+					"PostgreSQL",
+					"Zod",
+					"Tailwind CSS"
+				]
+			}
+		]
+	},
+	"certifications": {
+		"tag": "... /Educación & Certificados ...",
+		"title": "Títulos y Cursos",
+		"subtitle": "Formación universitaria, certificaciones técnicas y especializaciones en desarrollo de software."
+	},
 	"contact": {
 		"tag": "... /Contacto ...",
 		"title": "¿Trabajamos juntos?",

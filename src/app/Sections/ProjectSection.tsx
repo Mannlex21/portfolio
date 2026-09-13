@@ -5,7 +5,7 @@ import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { PROJECTS_MEDIA } from "@/app/constants/projectsData";
-import { SafeImage } from "@/app/components/SafeImage";
+import { ProjectCollage } from "@/app/components/ProjectCollage";
 import {
 	ProjectModal,
 	FullProject,
@@ -131,23 +131,12 @@ export default function ProjectsSection() {
 									</div>
 								</div>
 
-								{/* Columna Imágenes */}
-								<div className="w-full lg:w-7/12 grid grid-cols-12 gap-4 relative">
-									<div className="col-span-8 aspect-[4/3] rounded-3xl bg-[#1E1E1E] border border-[#3D3D3D] overflow-hidden">
-										<SafeImage
-											src={media?.images.main}
-											alt={`${project.title} screenshot`}
-											fallbackText="Imagen"
-										/>
-									</div>
-
-									<div className="col-span-4 aspect-[3/4] rounded-3xl bg-[#1E1E1E] border border-[#3D3D3D] self-end overflow-hidden">
-										<SafeImage
-											src={media?.images.mobile}
-											alt={`${project.title} mobile screenshot`}
-											fallbackText="Imagen Mobile"
-										/>
-									</div>
+								{/* Columna Imágenes con el nuevo Componente Collage */}
+								<div className="w-full lg:w-7/12">
+									<ProjectCollage
+										images={media?.images}
+										title={project.title}
+									/>
 								</div>
 							</div>
 						);

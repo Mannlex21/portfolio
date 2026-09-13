@@ -34,7 +34,7 @@ export default function AboutSection() {
 							alt="Manuel Alejandro - Fullstack Developer"
 							fill
 							sizes="(max-width: 1024px) 80vw, 30vw"
-							className="object-cover grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+							className="object-cover transition-all duration-700 ease-in-out"
 							priority
 						/>
 					</div>

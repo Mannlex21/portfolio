@@ -16,16 +16,16 @@ export default function FooterSection() {
 			className="w-full max-w-7xl mx-auto px-6 py-20 text-white"
 		>
 			<div className="space-y-6 mb-20">
-				<div className="flex flex-col md:flex-row md:flex-row-reverse md:items-end justify-between gap-4 border-b border-[#3D3D3D] pb-8">
+				<div className="flex flex-col md:flex-row  md:items-end justify-between gap-4 border-b border-[#3D3D3D] pb-8">
 					<div>
-						<span className="font-mono text-xs text-[#A6A6A6] block mb-2 text-right">
+						<span className="font-mono text-xs text-[#A6A6A6] block mb-2 text-left">
 							{t.contact.tag}
 						</span>
-						<h2 className="font-mono text-4xl sm:text-6xl font-semibold text-white tracking-tight text-right">
+						<h2 className="font-mono text-4xl sm:text-6xl font-semibold text-white tracking-tight text-left">
 							{t.contact.title}
 						</h2>
 					</div>
-					<p className="font-sans text-justify md:text-left text-sm text-[#A6A6A6] w-full md:max-w-md leading-relaxed">
+					<p className="font-sans text-justify md:text-right text-sm text-[#A6A6A6] w-full md:max-w-md leading-relaxed">
 						{t.contact.subtitle}
 					</p>
 				</div>
