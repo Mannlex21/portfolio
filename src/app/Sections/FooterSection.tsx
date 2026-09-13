@@ -2,8 +2,10 @@
 "use client";
 
 import Link from "next/link";
+import { ArrowUpRight, Mail, MessageCircle } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import { SocialLinksBar } from "@/app/components/SocialLinksBar";
+import { CONTACT_DATA, getWhatsappUrl } from "@/app/constants/contactData";
 
 export default function FooterSection() {
 	const { t } = useLanguage();
@@ -19,33 +21,27 @@ export default function FooterSection() {
 						<span className="font-mono text-xs text-[#A6A6A6] block mb-2 text-right">
 							{t.contact.tag}
 						</span>
-						<h2 className="font-mono text-4xl sm:text-6xl font-semibold text-white tracking-tight">
+						<h2 className="font-mono text-4xl sm:text-6xl font-semibold text-white tracking-tight text-right">
 							{t.contact.title}
 						</h2>
 					</div>
-					<p className="font-sans text-sm text-[#A6A6A6] max-w-md leading-relaxed">
+					<p className="font-sans text-justify md:text-left text-sm text-[#A6A6A6] w-full md:max-w-md leading-relaxed">
 						{t.contact.subtitle}
 					</p>
 				</div>
 			</div>
 
 			<div className="max-w-7xl mx-auto space-y-12">
-				{/* --- FILA SUPERIOR: Nombre Gigante (Izq) + Menú & Card Site (Der) --- */}
-				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end">
-					{/* Columna Izquierda: Nombre + Apellidos desfasados con subtítulo centrado */}
+				{/* --- FILA SUPERIOR: Nombre Gigante (Izq) + Menú & Card Contacto (Der) --- */}
+				<div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+					{/* Columna Izquierda: Nombre + Apellidos */}
 					<div className="lg:col-span-7 flex flex-col justify-end space-y-4">
 						<div className="font-sans font-bold tracking-tight leading-none text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white">
-							{/* Primera línea: Nombre */}
 							<div>Manuel Alejandro</div>
-
-							{/* Segunda línea: Alineada verticalmente al centro (sm:items-center) */}
 							<div className="mt-3 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
-								{/* Mantiene el texto en una sola línea sin romper la fila */}
 								<p className="order-2 sm:order-1 font-mono text-[10px] sm:text-xs md:text-sm text-[#888888] font-normal tracking-normal uppercase whitespace-nowrap">
 									{t.contact.role}
 								</p>
-
-								{/* Apellidos desfasados */}
 								<div className="order-1 sm:order-2 sm:ml-auto whitespace-nowrap">
 									Murillo Macias
 								</div>
@@ -53,52 +49,60 @@ export default function FooterSection() {
 						</div>
 					</div>
 
-					{/* Columna Derecha: Navigation + Card Site */}
-					<div className="lg:col-span-5 flex flex-col items-center lg:items-end space-y-6 ">
-						{/* Links de navegación */}
-						<nav className="flex flex-wrap justify-between w-full font-mono text-xs text-[#CCCCCC] max-w-100">
-							<Link
-								href="/"
-								className="hover:text-white transition-colors"
-							>
-								{t.nav.main}
-							</Link>
-							<Link
-								href="#about"
-								className="hover:text-white transition-colors duration-200"
-							>
-								{t.nav.about}
-							</Link>
-							<Link
-								href="#experience"
-								className="hover:text-white transition-colors duration-200"
-							>
-								{t.nav.work}
-							</Link>
-							<Link
-								href="#projects"
-								className="hover:text-white transition-colors duration-200"
-							>
-								{t.nav.projects}
-							</Link>
+					{/* Columna Derecha: Navigation + Card Contacto */}
+					<div className="lg:col-span-5 flex flex-col items-center lg:items-end space-y-6">
+						{/* Card "Contacto Rápido" */}
+						<div className="w-full bg-[#121212] border border-[#262626] rounded-3xl p-6 space-y-4 shadow-lg max-w-100">
+							<div className="flex items-center justify-between">
+								<span className="font-mono text-xs text-[#888888]">
+									Contacto directo
+								</span>
+								<span className="flex items-center gap-1.5 font-mono text-xs text-emerald-400">
+									<span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+									Disponible
+								</span>
+							</div>
 
-							<Link
-								href="#contact"
-								className="hover:text-white transition-colors duration-200"
-							>
-								{t.nav.contacts}
-							</Link>
-						</nav>
+							<div>
+								<h4 className="font-sans text-base font-semibold text-white">
+									¿Tienes un proyecto en mente?
+								</h4>
+								<p className="font-mono text-xs text-[#888888] mt-1">
+									Escríbeme por tu canal preferido y lo
+									platicamos.
+								</p>
+							</div>
 
-						{/* Card "Site" */}
-						<div className="w-full bg-[#121212] border border-[#262626] rounded-3xl p-6 space-y-3 shadow-lg max-w-100">
-							<h4 className="font-sans text-sm font-semibold text-white">
-								{t.contact.siteTitle}
-							</h4>
-							<div className="font-mono text-xs text-[#888888] space-y-1.5 leading-relaxed">
-								<p>{t.contact.poweredBy}</p>
-								<p>{t.contact.styledWith}</p>
-								<p>{t.contact.writtenIn}</p>
+							<div className="space-y-2.5 pt-1">
+								{/* Botón 1: Email */}
+								<a
+									href={`mailto:${CONTACT_DATA.email}`}
+									className="group flex items-center justify-between w-full bg-[#F5F5F5] hover:bg-white text-[#121212] rounded-full pl-4 pr-1 py-1 text-xs font-mono font-medium transition-all duration-300 shadow-sm active:scale-95"
+								>
+									<span className="flex items-center gap-2">
+										<Mail className="w-3.5 h-3.5 text-[#555555]" />
+										Enviar Correo
+									</span>
+									<div className="flex items-center justify-center bg-[#121212] text-white w-7 h-7 rounded-full">
+										<ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+									</div>
+								</a>
+
+								{/* Botón 2: WhatsApp */}
+								<a
+									href={getWhatsappUrl()}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="group flex items-center justify-between w-full bg-[#1A1A1A] hover:bg-[#222222] text-[#CCCCCC] hover:text-white border border-[#262626] rounded-full pl-4 pr-1 py-1 text-xs font-mono font-medium transition-all duration-300 active:scale-95"
+								>
+									<span className="flex items-center gap-2">
+										<MessageCircle className="w-3.5 h-3.5 text-emerald-400" />
+										Enviar WhatsApp
+									</span>
+									<div className="flex items-center justify-center bg-[#262626] text-white w-7 h-7 rounded-full">
+										<ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+									</div>
+								</a>
 							</div>
 						</div>
 					</div>

@@ -83,6 +83,7 @@
 	},
 
 	"work": {
+		"viewDetails": "View details",
 		"tag": "... /Career Path ...",
 		"title": "Work Experience",
 		"subtitle": "Track record of building mission-critical software, guiding frontend architectures, and optimizing enterprise backends.",

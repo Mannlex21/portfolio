@@ -84,6 +84,7 @@
 	},
 
 	"work": {
+		"viewDetails": "Ver detalle",
 		"tag": "... /Experiencia ...",
 		"title": "Experiencia Laboral",
 		"subtitle": "Trayectoria construyendo software de misión crítica, guiando arquitecturas frontend y optimizando backend empresarial.",

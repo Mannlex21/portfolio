@@ -1,7 +1,7 @@
 // components/HeroSection.tsx
 "use client";
 
-import { ArrowRight } from "lucide-react";
+import { ArrowDownRight, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/app/context/LanguageContext";
 import Link from "next/link";
 import { SocialLinksBar } from "../components/SocialLinksBar";
@@ -24,17 +24,16 @@ export default function HeroSection() {
 				<div className="order-4 lg:order-2 lg:col-span-5 flex justify-center lg:justify-end">
 					<Link
 						href="#projects"
-						className="group flex items-center gap-2 cursor-pointer"
+						className="group flex items-center justify-end w-64 sm:w-80 md:w-96 bg-[#F5F5F5] hover:bg-white text-[#121212] rounded-full pl-6 sm:pl-8 pr-1.5 sm:pr-2 py-2 sm:py-2.5 transition-all duration-300 shadow-md active:scale-95"
 					>
-						{/* Cápsula expandida */}
-						<div className="flex items-center justify-center bg-[#F5F5F5] group-hover:bg-white text-[#121212] w-64 sm:w-80 md:w-96 h-15 rounded-full transition-all duration-300 shadow-md">
-							<span className="font-serif italic text-lg sm:text-xl font-medium">
-								{t.about.projectsBtn}
-							</span>
-						</div>
-						{/* Botón circular con flecha */}
-						<div className="flex items-center justify-center bg-[#F5F5F5] group-hover:bg-white text-[#121212] w-15 h-15 rounded-full transition-all duration-300">
-							<ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+						{/* Texto con tipografía Serif e itálica */}
+						<span className="font-serif text-center w-full italic text-base sm:text-lg md:text-xl font-medium">
+							{t.about.projectsBtn}
+						</span>
+
+						{/* Círculo oscuro con la flecha */}
+						<div className="flex items-center justify-center bg-[#121212] text-white w-10 h-10 sm:w-11 sm:h-11 rounded-full shrink-0 transition-transform duration-300">
+							<ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-0.5  transition-transform" />
 						</div>
 					</Link>
 				</div>

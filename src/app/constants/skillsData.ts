@@ -66,7 +66,7 @@ export const SKILLS_DATA: SkillCategory[] = [
 	},
 	{
 		id: "devops",
-		title: "Calidad, Tooling & DevOps",
+		title: "Quality, Tooling & DevOps",
 		skills: [
 			"SonarQube / SonarCloud",
 			"Git",

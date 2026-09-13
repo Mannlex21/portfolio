@@ -34,7 +34,7 @@ export default function ProjectsSection() {
 							{t.projects.title}
 						</h2>
 					</div>
-					<p className="font-sans text-sm text-[#A6A6A6] max-w-md leading-relaxed">
+					<p className="font-sans text-justify md:text-right text-sm text-[#A6A6A6] max-w-md leading-relaxed">
 						{t.projects.subtitle}
 					</p>
 				</div>
