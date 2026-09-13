@@ -1,9 +1,9 @@
 // app/constants/contactData.ts
 
 export const CONTACT_DATA = {
-	email: "tu-email@dominio.com",
+	email: "mannlexx21@gmail.com",
 	whatsapp: {
-		number: "5213111234567", // Número en formato internacional sin espacios ni '+'
+		number: "523111263285", // Número en formato internacional sin espacios ni '+'
 		defaultMessage: "Hola Manuel, vi tu portafolio y me gustaría platicar.",
 	},
 } as const;
