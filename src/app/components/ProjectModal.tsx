@@ -71,7 +71,6 @@ function extractImageUrls(images?: ProjectImages): string[] {
 		images.img_3,
 		images.img_4,
 	];
-	console.log(rawItems);
 	return rawItems
 		.map((item) => (typeof item === "string" ? item : item?.url))
 		.filter((url): url is string => Boolean(url));
