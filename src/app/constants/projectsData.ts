@@ -28,6 +28,10 @@ export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 				url: "/images/projects/recetario-ai/recetario-mobile.png",
 				type: "mobile",
 			},
+			img_3: {
+				url: "/images/projects/recetario-ai/img4.png",
+				type: "desktop",
+			},
 		},
 		githubUrl: "https://github.com/Mannlex21/recetario-de-papa",
 		liveUrl: "https://recetario-de-papa.vercel.app/",
@@ -53,5 +57,24 @@ export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 		},
 		githubUrl: "https://github.com/Mannlex21/agente-finanzas",
 		liveUrl: "https://agente-finanzas-vert.vercel.app/",
+	},
+	"notes-ai": {
+		images: {
+			img_1: {
+				url: "/images/projects/notes-ai/img_1.png",
+				type: "desktop",
+			},
+
+			img_3: {
+				url: "/images/projects/notes-ai/img_4.png",
+				type: "mobile",
+			},
+			img_2: {
+				url: "/images/projects/notes-ai/img_2.png",
+				type: "desktop",
+			},
+		},
+		githubUrl: "https://github.com/Mannlex21/ai-notes-app",
+		liveUrl: "https://ai-notes-app-wine-six.vercel.app/",
 	},
 };

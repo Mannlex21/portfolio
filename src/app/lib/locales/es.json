@@ -166,6 +166,30 @@
 					"Zod",
 					"Tailwind CSS"
 				]
+			},
+			{
+				"id": "notes-ai",
+				"title": "Gestión Inteligente de Notas con IA y Neon DB",
+				"category": "Full-Stack / Aplicación de Productividad con IA",
+				"description": "Plataforma minimalista de notas y tareas con edición enriquecida, categorización con IA y persistencia en la nube.",
+				"longDescription": "Aplicación web moderna construida con Vue 3, Pinia, TypeScript y Tailwind CSS. Combina una interfaz cálida con estética de papel y el potencial de la Inteligencia Artificial para organizar notas, listas de tareas y pensamientos.",
+				"responsibilities": [
+					"Arquitectura del frontend utilizando Vue 3 Composition API, gestión de estado con Pinia e iconografía con Lucide Icons.",
+					"Integración de un asistente de IA para generación inteligente de títulos, auto-etiquetado, resúmenes, refinamiento de estilo y extracción de tareas.",
+					"Diseño de un editor versátil con soporte para texto enriquecido, listas de verificación, historial de deshacer/rehacer y personalización de paleta de colores.",
+					"Configuración e integración de base de datos Neon PostgreSQL para una persistencia segura y escalable en la nube."
+				],
+				"challenges": "Construir un editor híbrido capaz de alternar dinámicamente entre texto enriquecido y checklists interactivas manteniendo la integridad del historial de cambios y transformaciones de IA en tiempo real.",
+				"tags": [
+					"Vue 3",
+					"TypeScript",
+					"Pinia",
+					"Tailwind CSS",
+					"Neon DB",
+					"PostgreSQL",
+					"Integración IA",
+					"Lucide Vue"
+				]
 			}
 		]
 	},

@@ -51,7 +51,7 @@ function CollageCard({
 	return (
 		<div
 			className={`relative rounded-2xl bg-[#1E1E1E] border border-[#3D3D3D] overflow-hidden shadow-xl hover:border-[#555555] transition-all duration-300 ${
-				isMobile ? "aspect-[9/19] max-h-[380px]" : "aspect-[16/10]"
+				isMobile ? "aspect-[12/19] max-h-[380px]" : "aspect-[16/10]"
 			} ${className}`}
 		>
 			<SafeImage

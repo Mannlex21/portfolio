@@ -166,6 +166,30 @@
 					"Zod",
 					"Tailwind CSS"
 				]
+			},
+			{
+				"id": "notes-ai",
+				"title": "Minimalist Note-Taking App with AI & Neon DB",
+				"category": "Full-Stack / AI Productivity App",
+				"description": "Smart note-taking and task management platform featuring rich text editing, auto-categorization, and cloud persistence.",
+				"longDescription": "Modern web application built with Vue 3, Pinia, TypeScript, and Tailwind CSS. Combines a warm paper-inspired UI with AI capabilities to organize notes, check-lists, and thoughts effortlessly with cloud storage.",
+				"responsibilities": [
+					"Architected the application frontend using Vue 3 Composition API, Pinia state management, and Lucide Icons.",
+					"Integrated an interactive AI assistant for smart title generation, automatic tag suggestions, text summarization, style refinement, and action item extraction.",
+					"Designed a flexible note editor supporting rich text formatting, checklist toggle, undo/redo history stack, and color palette customization.",
+					"Configured Neon PostgreSQL database integration for secure cloud persistence and scalable storage."
+				],
+				"challenges": "Delivering a seamless hybrid editor capable of switching dynamically between rich text and interactive checklists while retaining undo/redo state and real-time AI transformations.",
+				"tags": [
+					"Vue 3",
+					"TypeScript",
+					"Pinia",
+					"Tailwind CSS",
+					"Neon DB",
+					"PostgreSQL",
+					"AI Integration",
+					"Lucide Vue"
+				]
 			}
 		]
 	},
