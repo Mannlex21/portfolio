@@ -34,7 +34,7 @@ export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 			},
 		},
 		githubUrl: "https://github.com/Mannlex21/recetario-de-papa",
-		liveUrl: "https://recetario-de-papa.vercel.app/",
+		liveUrl: "https://recipes-ai.mannlex21.dev/",
 	},
 	"finance-ai": {
 		images: {
@@ -56,7 +56,7 @@ export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 			},
 		},
 		githubUrl: "https://github.com/Mannlex21/agente-finanzas",
-		liveUrl: "https://agente-finanzas-vert.vercel.app/",
+		liveUrl: "https://finance-ai.mannlex21.dev/",
 	},
 	"notes-ai": {
 		images: {
@@ -75,6 +75,6 @@ export const PROJECTS_MEDIA: Record<string, ProjectMedia> = {
 			},
 		},
 		githubUrl: "https://github.com/Mannlex21/ai-notes-app",
-		liveUrl: "https://ai-notes-app-wine-six.vercel.app/",
+		liveUrl: "https://notes-ai.mannlex21.dev/",
 	},
 };
